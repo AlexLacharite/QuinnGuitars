@@ -78,11 +78,18 @@
       img.addEventListener('click', function() {
         fullImage.src = img.src;
         fullPage.style.display = 'block';
+
+        window.scrollTo(0, 0);
+
+        if (window.innerWidth <768) {
+          fullPage.style.top = '50%';
+        }
       });
     });
 
     closeButton.addEventListener('click', function() {
       fullPage.style.display = 'none';
+      fullPage.style.top = '0'; //reset the top property
     });
   </script>
   <br>
