@@ -64,18 +64,18 @@ p {
 
 /*[ OCD, M[OM] & Pol ] model pages*/
 
-.model-container {
+.item {
   display: flex;
   flex-wrap: wrap;
-  width: 50vh;
-  max-width: 100%;
+  width: auto;
+  max-width: 60vh;
   height: auto;
-  max-height: 100%;
+  max-height: 50vh;
   margin: 20px;
 
 }
   .wider {
-    width: 100%;
+    width: 100vh;
     height:auto;
     max-height: 100vh;
   }
