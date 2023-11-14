@@ -1,5 +1,5 @@
 body {
-  margin: auto 0;
+  margin: 0;
   font-family: Arial;
   background-color:black;
   color: rgb(255, 255, 255);
@@ -42,16 +42,15 @@ li.push {
   text-decoration-line: none;
 }
 
-/* Front & Logo image */
+/* background image */
 .image1 {
   position: relative;
   z-index: -1;
   width: 100%;
-  max-width: 100vw;
   top: 0;
   left: 0;
 }
-
+/* overlay Logo */
 .image2 {
   background-color: #000000a6;
   position: absolute;
