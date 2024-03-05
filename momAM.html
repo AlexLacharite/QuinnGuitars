@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>QuinnGuitars M[om]A-M</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+<!--Nav Bar-->
+  <nav class="nav">
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="./gallery.html">Gallery</a>
+      </li>
+      <li><a href="./models_index.html">Models</a> <!-- Uncreated Page-->
+      </li>
+      <li class="push">
+        <!--Contact Facebook Icon-->
+        <a href="https://www.facebook.com/quinnguitars">
+          <img src="./Img_files/Facebook.png" width="35px" height="35px">
+        </a>
+        <!--Contact instagram Icon-->
+        <a href="https://www.instagram.com/quinnguitars.mtl/">
+           <img src="./Img_files/Instagram.png" width="35px" height="35px">
+        </a>
+        <!--Contact Email Icon--> <!--NEED REWORK (SUBMIT FORM)-->
+        <a href="">
+          <img src="./Img_files/EmailWhite50.png" width="35px" height="35px">
+       </a>
+      </li>
+    </ul>
+  </nav>
+
+    <!--M[om]A-M Model-->  
+<h1><b>M[om]A-M</b></h1>
+<p>Description</p>
+  <div class="container">
+    <img class="item" src="Quinn Guitars Models/M[OM]A-M/Cover.jpg" alt="1">
+    <img class="item" src="Quinn Guitars Models/M[OM]A-M/IMG_20200214_193429.jpg" alt="2">
+    <img class="item" src="Quinn Guitars Models/M[OM]A-M/IMG_20200216_151047.jpg" alt="3">
+    <img class="item" src="Quinn Guitars Models/M[OM]A-M/IMG_20200216_151240.jpg" alt="4">
+    <img class="item" src="Quinn Guitars Models/M[OM]A-M/IMG_20200216_151537.jpg" alt="5">
+    <img class="item" src="Quinn Guitars Models/M[OM]A-M/IMG_20200216_151828.jpg" alt="6">
+    <img class="item" src="Quinn Guitars Models/M[OM]A-M/PXL_20220925_200223997.jpg" alt="7">
+    <img class="item" src="Quinn Guitars Models/M[OM]A-M/PXL_20220925_200231553.jpg" alt="8">
+  </div>
+
+  <div id="fullpage">
+    <img id="fullImage">
+    <button id="closeButton">Close</button>
+  </div>
+  <!--Script 4 full screen view of img on click ..css(#fullImage&#fullpage&#closeButton)-->
+  <script>
+    const imgs = document.querySelectorAll('.item');
+    const fullPage = document.querySelector('#fullpage');
+    const fullImage= document.querySelector('#fullImage');
+    const closeButton = document.querySelector('#closeButton');
+
+    imgs.forEach(img => {
+      img.addEventListener('click', function() {
+        fullImage.src = img.src;
+        fullPage.style.display = 'block';
+      });
+    });
+
+    closeButton.addEventListener('click', function() {
+      fullPage.style.display = 'none';
+    });
+  </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer class="footer"> © 2023 Oliver Duval-Quinn</footer>
+</body>
+</html>
