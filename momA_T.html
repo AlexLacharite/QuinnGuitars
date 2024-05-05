@@ -75,16 +75,16 @@
     const fullPage = document.querySelector('#fullpage');
     const fullImage= document.querySelector('#fullImage');
     const closeButton = document.querySelector('#closeButton');
-
+  
     imgs.forEach(img => {
       img.addEventListener('click', function() {
         fullImage.src = img.src;
-        fullPage.style.display = 'block';
+        fullPage.style.display = 'flex'; // Toggle display to flex when an image is clicked
       });
     });
-
+  
     closeButton.addEventListener('click', function() {
-      fullPage.style.display = 'none';
+      fullPage.style.display = 'none'; // Hide full page when close button is clicked
     });
   </script>
   <br>
