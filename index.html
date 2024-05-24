@@ -9,7 +9,7 @@
 <body>
   <nav class="nav">
     <ul class="main-nav">
-      <li><a href="">QuinnGuitars</a>
+      <li><a href="index.html">QuinnGuitars</a>
       </li>
       <li>
         <a href="./gallery.html">Slideshow</a>
@@ -25,9 +25,10 @@
         <a href="https://www.instagram.com/quinnguitars.mtl/">
            <img src="./Img_files/Instagram.png" width="35px" height="35px">
         </a>
-        <!--Contact Email Icon--> <!--NEED REWORK (SUBMIT FORM)-->
-        <a href="">
+        <!--Contact Email Icon-->
+        <a class="tooltip-container" id="tooltip" href="./contact.html">
           <img src="./Img_files/EmailWhite50.png" width="35px" height="35px">
+          <span class="tooltip">Contact Me</span>
        </a>
       </li>
     </ul>
@@ -44,8 +45,8 @@
   <br>
   <div class="aboutMe">
     <h2 id="aboutMe">About me</h2>
-    <br>
-    <p>
+      <br>
+      <p>
       Hi, I’m Oliver, founder of Quinn Guitars. I am a guitar maker, repairman and setup technician.<br>
        I work in a small but wonderful shop known as the Mile-End Guitar Coop, in Montreal, Canada.
        I take pride in crafting high precision, well set up instruments for musicians to have as a tool for their profession and I believe it is my responsibility to ensure that my clients get the best instrument possible, based on their needs and playing style, or the most out of their current instrument.
@@ -61,6 +62,22 @@
   <footer class="footer"> © 2023 Oliver Duval-Quinn</footer>
   <script>
     window.alert("This Website is still under developement") 
+    
+    // Contact Me Bubble
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const tooltip = document.querySelector('.tooltip');
+
+    // Show the tooltip when the page loads
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = '1';
+
+    // Hide the tooltip after 15 seconds
+    setTimeout(() => {
+        tooltip.style.visibility = 'hidden';
+        tooltip.style.opacity = '0';
+    }, 15000);
+});
   </script>
 </body>
 </html>

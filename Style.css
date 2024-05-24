@@ -161,13 +161,14 @@ p {
 
 /*About Section > index.html*/
 #aboutMe {
-text-align: center;
+text-align: left;
+margin-left: 5%;
 }
 
 .aboutMe > p {
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 10%;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -202,6 +203,44 @@ text-align: center;
   font-size: 20px;
 }
 
+/* Contact Me Notification Bubble */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 
 
 

@@ -1,3 +1,21 @@
+// Contact Me Bubble
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const tooltip = document.querySelector('.tooltip');
+
+    // Show the tooltip when the page loads
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = '1';
+
+    // Hide the tooltip after 5 seconds
+    setTimeout(() => {
+        tooltip.style.visibility = 'hidden';
+        tooltip.style.opacity = '0';
+    }, 5000);
+});
+
+
+// SlideShow JS
 let slideshow1Index = 0;
 let slideshow2Index = 0;
 
