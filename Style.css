@@ -242,7 +242,12 @@ margin-left: 5%;
   border-color: #555 transparent transparent transparent;
 }
 
+/* contact.html-Css */
 
+carteAffaire {
+ margin-left: auto;
+ margin-right: auto;
+}
 
   /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 500px) {
